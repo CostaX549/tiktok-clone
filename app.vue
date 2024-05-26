@@ -11,11 +11,7 @@
  const { $userStore, $generalStore } = useNuxtApp()
  const { isLoginOpen, isEditProfileOpen } = storeToRefs($generalStore)
 
- useHead({
-    meta: [
-    { 'http-equiv': 'Content-Security-Policy', content: 'upgrade-insecure-requests'  }
-  ],
- })
+ 
  onMounted(async () => {
    
     $generalStore.bodySwitch(false) 
